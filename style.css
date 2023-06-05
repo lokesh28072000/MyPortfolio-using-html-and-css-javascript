@@ -32,6 +32,10 @@ body{
     background-color: rgb(14, 12, 39);
 }
 
+.header .sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+}
+
 .logo{
     font-size: 2.5rem;
     color:yellow;
@@ -44,6 +48,10 @@ body{
     color:white;
     margin-left: 4rem;
 }
+
+/* .navbar :active{
+    display: block;
+} */
 
 .navbar a:hover,
 .navbar a.active{
@@ -234,14 +242,14 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(  rgba(0,0,0,.1) , rgb(24, 164, 230));
+    background:linear-gradient(  rgba(0,0,0,.1) , rgb(73, 85, 20));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
-    color: black;
+    color: white;
     transform: translateY(100%);
     transition: .5s ease;
 
@@ -308,3 +316,42 @@ span{
 .contact-icon a i{
     font-size: 4rem;
 }
+@media (max-width: 576px) {
+    .portfolio-container {
+        display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+}
+@media (max-width: 768px){
+    #menu-icon {
+        display:block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        display: none;
+    
+    }
+
+    .navbar.active{
+        display: block;
+        background-color: rgb(24, 26, 41);
+    }
+
+    .navbar a {
+        display: block;
+        font-size:  2rem;
+        margin: 3rem 0;
+    }
+
+
+
+}
+
+
